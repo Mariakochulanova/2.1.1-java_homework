@@ -1,11 +1,14 @@
 public class Miles {
     public static void main(String[] args) {
-        int mile = 20;
-        int ticketprice;
-        ticketprice = 20_000;
-        int totalmiles = ticketprice / mile;
+        BonusMilesService bonusMilesService = new BonusMilesService();
+
+        int ticketprice = 10_000;
+
+        int totalmiles = bonusMilesService.calculate(10_000);
 
         System.out.println(totalmiles);
+
+
 
 
     }
